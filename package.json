@@ -1,0 +1,63 @@
+{
+  "title": "Artika Electron",
+  "name": "artika-electron",
+  "version": "1.0.0",
+  "description": "An electron application with create-react-app (CRA).",
+  "keywords": [
+    "electron",
+    "react",
+    "bootstrap",
+    "sass"
+  ],
+  "homepage": "./",
+  "bugs": {
+    "url": "https://github.com/prianto/artika-electron/issues",
+    "email": "andi@prianto.net"
+  },
+  "author": "Andi Prianto",
+  "contributors": [
+    "Andi Prianto (http://www.prianto.net/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prianto/artika-electron.git"
+  },
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "electron-pack": "build -c.extraMetadata.main=build/electron.js",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "build": {
+    "appId": "net.prianto.artika-electron",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "dompurify": "^1.0.3",
+    "electron-is-dev": "^0.3.0",
+    "electron-serve": "^0.1.0",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  }
+}
